@@ -3,9 +3,12 @@ def reverse_each_word(string)
   
   # reversed_words = []
   
-  words.collect { |word| word.reverse}.join(" ")
+  # words.each { |word| reversed_words << word.reverse}
   
   # return reversed_words.join(" ")
+  
+  
+  return words.collect { |word| word.reverse}.join(" ")
 end
 
-reverse_each_word("test phrase")
+# reverse_each_word("test phrase")
