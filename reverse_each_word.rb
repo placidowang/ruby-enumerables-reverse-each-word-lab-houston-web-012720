@@ -8,7 +8,7 @@ def reverse_each_word(string)
   # return reversed_words.join(" ")
   
   
-  words.collect { |word| word.reverse}.join(" ")
+  return words.collect { |word| word.reverse}.join(" ")
 end
 
 # reverse_each_word("test phrase")
