@@ -1,11 +1,14 @@
 def reverse_each_word(string)
   words = string.split(/ /)
   
-  # reversed_words = []
+  reversed_words = []
   
-  words.collect { |word| word.reverse}.join(" ")
+  words.each { |word| reversed_words << word.reverse}
   
-  # return reversed_words.join(" ")
+  return reversed_words.join(" ")
+  
+  
+  # words.collect { |word| word.reverse}.join(" ")
 end
 
 reverse_each_word("test phrase")
